@@ -1,0 +1,27 @@
+.set-min-height {
+    min-height: 100vh;
+}
+
+.set-border {
+    border: 1px solid red;
+}
+
+.set-border-blue {
+    border: 1px solid blue;
+}
+
+.set-border-right {
+    border-right: 1px solid black;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu li:hover .sub-menu {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 768px) {
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
