@@ -23,7 +23,7 @@
               Biodiversité végétale
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Les collections d'herbiers</a>
+              <a class="dropdown-item" href="<?= $this->Url->build(['_name' => 'herbarium-collection']); ?>">Les collections d'herbier</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Les inventaires forestiers</a>
             </div>

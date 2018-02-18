@@ -20,7 +20,7 @@
  
  
 <?php $this->start('Title'); ?>
-    <?= $this->element('title', ['title' => 'Collection des données de l\'herbier du Gabon']) ?>
+    <?= $this->element('title', ['title' => 'Collection des données de l\'herbier du Gabon', 'logo' => true]) ?>
 <?php $this->end(); ?>
   
 <div class="row mt-4">
