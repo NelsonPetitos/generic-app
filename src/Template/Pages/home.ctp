@@ -2,13 +2,17 @@
     <?= $this->element('carossel')?>
 <?php $this->end(); ?>
 
+<?php $this->start('Navbar'); ?>
+    <?= $this->element('navbar', ['activeMenu' => 1]); ?>
+<?php $this->end(); ?>
 
 
 <?php $this->start('Breadcrumb'); ?>
 <div class="col-12">
  <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Accueil</a></li>
+    <li class="breadcrumb-item"><a href="<?= $this->Url->build(['_name' => 'home']) ?>">Site</a></li>
+    <li class="breadcrumb-item active">Accueil</li>
   </ol>
  </nav>              
 </div>
@@ -16,12 +20,10 @@
  
  
 <?php $this->start('Title'); ?>
-<div class="col-12 my-5">
-    <h3><?= $this->Html->image('logo-ird.png', ['height' => '30', 'width' => '35']); ?> Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-</div>
+    <?= $this->element('title', ['title' => 'Collection des données de l\'herbier du Gabon']) ?>
 <?php $this->end(); ?>
   
-<div class="row mt-5">
+<div class="row mt-4">
     <div class="col-md-8">
         <div class="row">
             <div class="col">
@@ -45,11 +47,11 @@
         </div>
     </div>
     <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
+        <div class="card w-100">
           <img class="d-block w-100" src="http://via.placeholder.com/286x180" alt="Card image">
           <div class="card-body">
-            <h5 class="card-title">Actualité</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content...</p>
+            <h5 class="card-title">À la une !</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci inventore illum neque perferendis sunt, eius quis ratione. Ipsam illum voluptatibus rem odit dignissimos at, earum enim iure doloribus, veniam dolorem....</p>
             <a href="#" class="btn btn-primary">Lire la suite</a>
           </div>
         </div>
