@@ -10,5 +10,5 @@
   <a href="#" class="list-group-item list-group-item-action <?= $menu2 ?>">Échantillons</a>
   <a href="#" class="list-group-item list-group-item-action <?= $menu3 ?>">Collecteurs</a>
   <a href="#" class="list-group-item list-group-item-action <?= $menu4 ?>">Taxons</a>
-  <a href="#" class="list-group-item list-group-item-action disabled <?= $menu5 ?>">Localités</a>
+  <a href="<?= $this->Url->build(['controller' => 'gases', 'prefix' => 'collection']); ?>" class="list-group-item list-group-item-action disabled <?= $menu5 ?>">Localités</a>
 </div>

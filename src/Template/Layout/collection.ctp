@@ -46,7 +46,15 @@ $cakeDescription = 'Collection d\'herbier';
       <div class="container set-min-height">
          <div class="row">
             <?= $this->fetch('Title'); ?>
-            <?= $this->fetch('Breadcrumb'); ?>
+            <div class="col-12">
+             <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="<?= $this->Url->build(['_name' => 'home']) ?>">Site</a></li>
+                <li class="breadcrumb-item"><a href="<?= $this->Url->build(['_name' => 'herbarium-collection']) ?>">Biodiversité végétale</a></li>
+                <?= $this->fetch('Breadcrumb'); ?>
+              </ol>
+             </nav>              
+            </div>
             <div class="col-md-3">
                <?= $this->fetch('Menu'); ?>
             </div>

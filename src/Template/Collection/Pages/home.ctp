@@ -4,15 +4,7 @@
 
 
 <?php $this->start('Breadcrumb'); ?>
-<div class="col-12">
- <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="<?= $this->Url->build(['_name' => 'home']) ?>">Site</a></li>
-    <li class="breadcrumb-item"><a href="<?= $this->Url->build(['_name' => 'herbarium-collection']) ?>">Biodiversité végétale</a></li>
     <li class="breadcrumb-item active">Collections d'herbier</li>
-  </ol>
- </nav>              
-</div>
 <?php $this->end(); ?>
  
  
